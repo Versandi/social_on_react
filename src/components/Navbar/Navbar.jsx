@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className={classes.nav}>
       <ul className={classes.list}>
         <li className={classes.item}>
-          <NavLink to="/profile" className={navData => navData.isActive ? classes.active : classes.item} >Моя Страница</NavLink></li>
+          <NavLink className={navData => navData.isActive ? classes.active : classes.item} to="/profile" >Моя Страница</NavLink></li>
         <li className={classes.item}>
           <NavLink className={navData => navData.isActive ? classes.active : classes.item} to="/dialogs">Мои Сообщения</NavLink></li>
         <li className={classes.item}>

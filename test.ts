@@ -1,0 +1,1 @@
+const isACtive: boolean = true;

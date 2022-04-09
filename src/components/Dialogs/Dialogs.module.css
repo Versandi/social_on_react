@@ -5,6 +5,34 @@
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   grid-template-rows: 19px min-content;
+
+  text-decoration: none;
+}
+
+.item>a {
+  padding: 1rem;
+  width: 385px;
+
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: 19px min-content;
+
+  text-decoration: none;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.item:hover>a {
+  background-color: #EBEBEB;
+}
+
+
+/* Активное состояние диалога */
+.item .active,
+.item:hover .active {
+  background-color: #EEF4FD;
+  border-top: 1px solid #DEE7F4;
+  border-bottom: 1px solid #DEE7F4;
 }
 
 .dialogAvatar {
