@@ -1,0 +1,55 @@
+.top {
+  margin-right: 10px;
+
+  padding-bottom: 2rem;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+
+  background-color: #c4c4c4;
+}
+
+.edit {
+  margin-top: 0.8rem;
+  padding: 0.5rem 2rem;
+
+  border-radius: none;
+  border: none;
+  background-color: #dee5eb;
+  color: #9aa6b2;
+  font-size: 1rem;
+}
+
+.profileData {
+  margin-left: 3.5rem;
+}
+
+.profileData table {
+  margin-top: 1.5rem;
+
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+}
+
+.profileName {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #506f94;
+}
+
+.col1 {
+  font-size: 1rem;
+  color: #72767f;
+}
+
+.col2 {
+  padding-left: 90px;
+
+  font-size: 1rem;
+  color: #506f94;
+}

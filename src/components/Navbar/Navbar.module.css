@@ -1,0 +1,33 @@
+.nav {
+  /* margin-left: 10px; */
+
+  grid-area: nav;
+
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-right: 1px solid #DEDFE3;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 1.5rem;
+  padding: 0;
+}
+
+li.item {
+  padding: 0.5rem 1rem;
+}
+
+li.item:hover {
+  background-color: #EBEBEB;
+}
+
+.item>a {
+  color: #506F94;
+  text-decoration: none;
+}
+
+.item .active {
+  color: #95A9C1;
+}

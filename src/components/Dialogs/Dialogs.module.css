@@ -1,0 +1,44 @@
+.dialogCard {
+  padding: 1rem;
+  width: 385px;
+
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: 19px min-content;
+}
+
+.dialogAvatar {
+  margin-right: 44px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #DEE5EB;
+}
+
+.dialogUser {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+  font-weight: 700;
+  color: #506F94;
+}
+
+.dialogTime {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+
+  font-size: 0.75rem;
+  color: #9AA6B2;
+}
+
+.dialogText {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  margin: 0;
+
+
+  color: #848992;
+}

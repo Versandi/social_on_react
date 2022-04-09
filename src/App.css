@@ -1,0 +1,32 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.app-wrapper {
+  width: 1600px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav content content";
+  grid-template-columns: 205px 1fr;
+  grid-template-rows: 60px 1fr;
+
+  background-color: #edeef0;
+}
+
+.content {
+  grid-area: content;
+
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+}

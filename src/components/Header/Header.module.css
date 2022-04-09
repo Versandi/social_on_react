@@ -1,0 +1,20 @@
+.header {
+  grid-area: header;
+
+  padding-left: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #506f94;
+}
+
+.item {
+  display: inline;
+
+  margin-right: 2.5rem;
+
+  color: #ffffff;
+  font-weight: 700;
+}

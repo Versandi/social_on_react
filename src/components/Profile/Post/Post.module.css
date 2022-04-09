@@ -1,0 +1,30 @@
+.post {
+  margin-bottom: 50px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+
+  background-color: #dee5eb;
+}
+
+.message {
+  margin-left: 1.5rem;
+
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading > span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #506f94;
+}
