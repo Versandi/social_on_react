@@ -1,48 +1,51 @@
 import classes from './Dialogs.module.css';
 import { NavLink } from 'react-router-dom';
 
+const DialogItem = (props) => {
+  return (
+    <li className={classes.dialogItem}>
+      <NavLink to={"dialogs/" + props.id} className={navData => navData.isActive ? classes.active : classes.item} >
+        <div className={classes.dialogAvatar}></div>
+        <span className={classes.dialogUser}>{props.name}</span>
+        <time className={classes.dialogTime}>{props.time}</time>
+        <p className={classes.dialogText}>Привет, как дела?</p>
+      </NavLink>
+    </li>
+  )
+};
+
+const Message = (props) => {
+  return (
+    <li className={classes.messageItem}>
+      <div className={classes.messageAvatar}></div>
+      <p className={classes.messageText}>{props.message}</p>
+    </li>
+  )
+}
+
 const Dialogs = (props) => {
   return (
     <div className={classes.dialogs}>
-      dialogs
       <div className={classes.dialogsInner}>
         <ul>
-          <li className={classes.item}>
-            <NavLink className={navData => navData.isActive ? classes.active : classes.item} to="/dialogs/1">
-              <div className={classes.dialogAvatar}></div>
-              <span className={classes.dialogUser}>Максим Лебедев</span>
-              <time className={classes.dialogTime}>18:42</time>
-              <p className={classes.dialogText}>Привет, как дела?</p>
-            </NavLink>
-          </li>
-          <li className={classes.item}>
-            <NavLink to="/dialogs/2" className={navData => navData.isActive ? classes.active : classes.item}>
-              <div className={classes.dialogAvatar}></div>
-              <span className={classes.dialogUser}>Наталья Ларина</span>
-              <time className={classes.dialogTime}>21:02</time>
-              <p className={classes.dialogText}>Привет, как дела?</p>
-            </NavLink>
-          </li>
-          <li className={classes.item}>
-            <NavLink to="/dialogs/3" className={navData => navData.isActive ? classes.active : classes.item}>
-              <div className={classes.dialogAvatar}></div>
-              <span className={classes.dialogUser}>Василий Гончаров</span>
-              <time className={classes.dialogTime}>07:22</time>
-              <p className={classes.dialogText}>Привет, как дела?</p>
-            </NavLink>
-          </li>
-          <li className={classes.item}>
-            <NavLink to="/dialogs/4" className={navData => navData.isActive ? classes.active : classes.item}>
-              <div className={classes.dialogAvatar}></div>
-              <span className={classes.dialogUser}>Марина Иваненко</span>
-              <time className={classes.dialogTime}>11:22</time>
-              <p className={classes.dialogText}>Привет, как дела?</p>
-            </NavLink>
-          </li>
-
+          <DialogItem name="Максим Лебедев" id="1" time="18:42" />
+          <DialogItem name="Наталья Ларина" id="2" time="11:10" />
+          <DialogItem name="Василий Гончаров" id="3" time="21:15" />
+          <DialogItem name="Марина Иваненко" id="4" time="09:56" />
         </ul>
       </div>
-      <div className={classes.messagesInner}></div>
+
+      <div className={classes.messagesInner}>
+        <ul>
+          <Message message="Привет, как дела?" />
+          <Message message="Продам втулки кулисы(материал капролон графитонаполненный) ремкомплект кулисы на все модели Бмв
+Втулки трапеции дворников е36 е34 (бронза)
+Втулки капота е34 (капролон)
+Отправка почтой по РБ
+Более подробно в л.с" />
+        </ul>
+      </div>
+
     </div>
   )
 };
