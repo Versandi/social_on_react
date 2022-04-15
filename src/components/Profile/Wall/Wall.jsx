@@ -4,7 +4,7 @@ import Post from '../Post/Post';
 const Wall = () => {
 
   let postData = [
-    { id: 1, message: 'Привет', time: '6 окт в 15:30', likesCount: 12, time: '8 июл в 15:30' },
+    { id: 1, message: 'Привет', time: '6 окт в 15:30', likesCount: 12 },
     { id: 2, message: 'Как дела?', time: '6 окт в 15:40', likesCount: 24 }
   ]
 
