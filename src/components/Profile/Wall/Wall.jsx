@@ -1,12 +1,16 @@
 import classes from './Wall.module.css';
-import Post from '../Post/Post';
+import Post from './Post/Post';
 
 const Wall = () => {
 
-  let postData = [
+  let posts = [
     { id: 1, message: 'Привет', time: '6 окт в 15:30', likesCount: 12 },
     { id: 2, message: 'Как дела?', time: '6 окт в 15:40', likesCount: 24 }
-  ]
+  ];
+
+  let postElements = posts
+    .map(p => <Post message={p.message} time={p.time} likesCount={p.likesCount} />
+    );
 
   return (
     <>
@@ -18,8 +22,7 @@ const Wall = () => {
         <textarea rows="2"></textarea>
         <button className={classes.button}>Отправить</button>
       </div>
-      <Post message={postData[0].message} time={postData[0].time} likesCount={postData[0].likesCount} />
-      <Post message={postData[1].message} time={postData[1].time} likesCount={postData[1].likesCount} />
+      {postElements}
     </>
   )
 };

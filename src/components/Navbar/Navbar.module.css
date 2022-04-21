@@ -1,5 +1,6 @@
 .nav {
-  /* margin-left: 10px; */
+
+  padding-right: 0.5rem;
 
   grid-area: nav;
 
