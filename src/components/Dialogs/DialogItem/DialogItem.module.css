@@ -1,0 +1,60 @@
+.item>a {
+  padding: 1rem;
+  width: 385px;
+
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: 19px min-content;
+
+  text-decoration: none;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.item:hover>a {
+  background-color: #EBEBEB;
+}
+
+
+/* Активное состояние диалога */
+.item .active,
+.item:hover .active {
+  background-color: #EEF4FD;
+  border-top: 1px solid #DEE7F4;
+  border-bottom: 1px solid #DEE7F4;
+}
+
+.avatar {
+  margin-right: 44px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #DEE5EB;
+}
+
+.user {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+  font-weight: 700;
+  color: #506F94;
+}
+
+.time {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+
+  font-size: 0.75rem;
+  color: #9AA6B2;
+}
+
+.text {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  margin: 0;
+
+  color: #848992;
+}
